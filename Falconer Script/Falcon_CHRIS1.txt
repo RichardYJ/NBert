@@ -1,0 +1,1203 @@
+# Enigma Configuration - NRZ and PAM4 Independent Loopback Modes
+# by Rajan Pai
+
+3f18 0888  # All Reset
+3f18 0777  # Logic Reset
+3f18 0000  # Clear Reset
+
+3f0e 0000  # Mux  Mode Select = Direct 
+3f0f 0000  # FIFO Mode Select = Direct 
+3f28 0000  # Ref_clk_sel  
+
+########  Top PLL Setting
+# Fsync1 - PAM4 
+3b00 1aa8
+3b01 843f
+3b02 4096
+3b03 6d86
+3b04 7180
+3b05 9000
+
+# Fsync2 - NRZ 
+3c00 1aa4
+3c01 851f
+3c02 2096
+3c03 6d86
+3c04 7580
+3c05 9364
+
+####### PAM4 PLL Settings
+
+12FF 3DB0
+12F6 1D40
+12EA 8020
+12FD 1498
+12FC 3648
+12F5 1498
+12F4 363c
+12F3 7336
+12F2 7FB6
+12EA 8020  # local phase rotator enabled/ ref_mux=00 (local clk)
+12EB 0000  # [14:13]=11 [00/01 (lane0) 10/11 (lane1)]
+
+16FF 3DB0
+16F6 1D40
+16EA 8020
+16FD 1498
+16FC 3648
+16F5 1498
+16F4 363c
+16F3 7336
+16F2 7FB6
+16EA 8020  # local phase rotator enabled/ ref_mux=00 (local clk)
+16EB 0000  # [14:13]=11 [00/01 (lane0) 10/11 (lane1)]
+
+1AFF 3DB0
+1AF6 1D40
+1AEA 8020
+1AFD 1498
+1AFC 3648
+1AF5 1498
+1AF4 363c
+1AF3 7336
+1AF2 7FB6
+1AEA 8020  # local phase rotator enabled/ ref_mux=00 (local clk)
+1AEB 0000  # [14:13]=11 [00/01 (lane0) 10/11 (lane1)]
+
+1eFF 3DB0
+1eF6 1D40
+1eEA 8020
+1eFD 1498
+1eFC 3648
+1eF5 1498
+1eF4 363c
+1eF3 7336
+1eF2 7FB6
+1eEA 8020  # local phase rotator enabled/ ref_mux=00 (local clk)
+1eEB 0000  # [14:13]=11 [00/01 (lane0) 10/11 (lane1)]
+
+# Use RECOVERED CLK MODE 
+
+#12F5 2098  # /128T * 4 * 32
+#12F6 1D00  # PAM4 TX using Rx NRZ recovered clk 
+#12EA 8028  # local phase rotator enabled/ ref_mux=00 (local clk)
+
+#16F5 2098  # /128T * 4 * 32
+#16F6 1D00  # PAM4 TX using Rx NRZ recovered clk 
+#16EA 8028  # local phase rotator enabled/ ref_mux=00 (local clk)
+
+#1AF5 2098  # /128T * 4 * 32
+#1AF6 1D00  # PAM4 TX using Rx NRZ recovered clk 
+#1AEA 8028  # local phase rotator enabled/ ref_mux=00 (local clk)
+
+#1eF5 2098  # /128T * 4 * 32
+#1eF6 1D00  # PAM4 TX using Rx NRZ recovered clk 
+#1eEA 8028  # local phase rotator enabled/ ref_mux=00 (local clk)
+
+####### B0 PAM4
+
+#10ff d36c  # DC coupled Tx/Rx
+10ff eb6c  # AC coupled Tx/Rx
+1000 106b  # State Machine Reset Control
+#1003 7933  #*****
+1003 78b3 # SM_SD_Th
+1004 b000  #*****
+1005 bd6b  #*****
+1007 2aa8  #*****
+#1007 2ac8  #*****
+100a 6571  #*****
+1010 0100  #*****
+104b 1802  #*****
+10fc b2b1  # FFE Gain Control ( Main / Sum )
+10fb 3333  # FFE delay
+10fa 00a0  # ctle_addcap=0
+10f1 67fc  # Analog Register (vdrv )
+10f0 ff80  # Analog Register (vdrv / v1p3_reg)
+10fe b75a  # Analog Register (agc/agc1 )
+1002 0200  # SM_Cntr_target_final
+1012 3ec0  # OW_Th_q
+1042 b3fc  # all phase enabled
+10f3 8eb0  # phase_addcap
+10a5 0000  # post3=0
+10a7 0000  # post2=0
+10a9 fe00  # post1=-2
+10ab 1400  # main=20
+10ad fc00  # precursor=-4
+10a0 eb00  # Tx PRBS Control ( TX INVERSION )
+1043 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1048 2933
+#1049 5c96
+#104a edff
+1048 08a4
+1049 dc96
+104a edde
+1021 00f0   # CTLE=7
+10fd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1020 03c0 # Kf/Kp
+104b 2802 # local rotator
+104b 3802
+
+#11ff d36c  # DC coupled Tx/Rx
+11ff eb6c  # AC coupled Tx/Rx
+1100 106b  # State Machine Reset Control
+#1103 7933  #*****
+1103 78b3 # SM_SD_Th
+1104 b000  #*****
+1105 bd6b  #*****
+1107 2aa8  #*****
+#1107 2ac8  #*****
+110a 6571  #*****
+1110 0100  #*****
+114b 1802  #*****
+11fc b2b1  # FFE Gain Control ( Main / Sum )
+11fb 3333  # FFE delay
+11fa 00a0  # ctle_addcap=0
+11f1 67fc  # Analog Register (vdrv )
+11f0 ff80  # Analog Register (vdrv / v1p3_reg)
+11fe b75a  # Analog Register (agc/agc1 )
+1102 0200  # SM_Cntr_target_final
+1112 3fc0  # OW_Th_q
+1142 b3fc  # all phase enabled
+11f3 8e40  # phase_addcap
+11a5 0000  # post3=0
+11a7 0000  # post2=0
+11a9 fe00  # post1=-2
+11ab 1400  # main=20
+11ad fc00  # precursor=-4
+11a0 eb00  # Tx PRBS Control ( TX INVERSION )
+1143 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1148 2933
+#1149 5c96
+#114a edff
+1148 08a4
+1149 dc96
+114a edde
+1121 00f0   # CTLE=7
+11fd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1120 03c0 # Kf/Kp
+114b 2802 # local rotator
+114b 3802
+
+####### B1 PAM4
+
+
+#14ff d36c  # DC coupled Tx/Rx
+14ff eb6c  # AC coupled Tx/Rx
+1400 106b  # State Machine Reset Control
+#1403 7933  #*****
+1403 78b3 # SM_SD_Th
+1404 b000  #*****
+1405 bd6b  #*****
+1407 2aa8  #*****
+#1407 2ac8  #*****
+140a 6571  #*****
+1410 0100  #*****
+144b 1802  #*****
+14fc b2b1  # FFE Gain Control ( Main / Sum )
+14fb 3333  # FFE delay
+14fa 00a0  # ctle_addcap=0
+14f1 67fc  # Analog Register (vdrv )
+14f0 ff80  # Analog Register (vdrv / v1p3_reg)
+14fe b75a  # Analog Register (agc/agc1 )
+1402 0200  # SM_Cntr_target_final
+1412 3fc0  # OW_Th_q
+1442 b3fc  # all phase enabled
+14f3 8e40  # phase_addcap
+14a5 0000  # post3=0
+14a7 0000  # post2=0
+14a9 fe00  # post1=-2
+14ab 1400  # main=20
+14ad fc00  # precursor=-4
+14a0 eb00  # Tx PRBS Control ( TX INVERSION )
+1443 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1448 2933
+#1449 5c96
+#144a edff
+1448 08a4
+1449 dc96
+144a edde
+1421 00f0   # CTLE=7
+14fd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1420 03c0 # Kf/Kp
+144b 2802 # local rotator
+144b 3802
+
+#15ff d36c  # DC coupled Tx/Rx
+15ff eb6c  # AC coupled Tx/Rx
+1500 106b  # State Machine Reset Control
+#1503 7933  #*****
+1503 78b3 # SM_SD_Th
+1504 b000  #*****
+1505 bd6b  #*****
+1507 2aa8  #*****
+#1507 2ac8  #*****
+150a 6571  #*****
+1510 0100  #*****
+154b 1802  #*****
+15fc b2b1  # FFE Gain Control ( Main / Sum )
+15fb 3333  # FFE delay
+15fa 00a0  # ctle_addcap=0
+15f1 67fc  # Analog Register (vdrv )
+15f0 ff80  # Analog Register (vdrv / v1p3_reg)
+15fe b75a  # Analog Register (agc/agc1 )
+1502 0200  # SM_Cntr_target_final
+1512 3fc0  # OW_Th_q
+1542 b3fc  # all phase enabled
+15f3 9240  # phase_addcap
+15a5 0000  # post3=0
+15a7 0000  # post2=0
+15a9 fe00  # post1=-2
+15ab 1400  # main=20
+15ad fc00  # precursor=-4
+15a0 eb00  # Tx PRBS Control ( TX INVERSION )
+1543 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1548 2933
+#1549 5c96
+#154a edff
+1548 08a4
+1549 dc96
+154a edde
+1521 00f0   # CTLE=7
+15fd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1520 03c0 # Kf/Kp
+154b 2802 # local rotator
+154b 3802
+
+####### B2 PAM4
+
+#18ff d36c  # DC coupled Tx/Rx
+18ff eb6c  # AC coupled Tx/Rx
+1800 106b  # State Machine Reset Control
+#1803 7933  #*****
+1803 78b3 # SM_SD_Th
+1804 b000  #*****
+1805 bd6b  #*****
+1807 2aa8  #*****
+#1807 2ac8  #*****
+180a 6571  #*****
+1810 0100  #*****
+184b 1802  #*****
+18fc b2b1  # FFE Gain Control ( Main / Sum )
+18fb 3333  # FFE delay
+18fa 00a0  # ctle_addcap=0
+18f1 67fc  # Analog Register (vdrv )
+18f0 ff80  # Analog Register (vdrv / v1p3_reg)
+18fe b75a  # Analog Register (agc/agc1 )
+1802 0200  # SM_Cntr_target_final
+1812 3ec0  # OW_Th_q
+1842 b3fc  # all phase enabled
+18f3 8e50  # phase_addcap
+18a5 0000  # post3=0
+18a7 0000  # post2=0
+18a9 fe00  # post1=-2
+18ab 1400  # main=20
+18ad fc00  # precursor=-4
+18a0 eb00  # Tx PRBS Control ( TX INVERSION )
+1843 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1848 2933
+#1849 5c96
+#184a edff
+1848 08a4
+1849 dc96
+184a edde
+1821 00f0   # CTLE=7
+18fd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1820 03c0 # Kf/Kp
+184b 2802 # local rotator
+184b 3802
+
+#19ff d36c  # DC coupled Tx/Rx
+19ff eb6c  # AC coupled Tx/Rx
+1900 106b  # State Machine Reset Control
+#1903 7933  #*****
+1903 78b3 # SM_SD_Th
+1904 b000  #*****
+1905 bd6b  #*****
+1907 2aa8  #*****
+#1907 2ac8  #*****
+190a 6571  #*****
+1910 0100  #*****
+194b 1802  #*****
+19fc b2b1  # FFE Gain Control ( Main / Sum )
+19fb 3333  # FFE delay
+19fa 00a0  # ctle_addcap=0
+19f1 67fc  # Analog Register (vdrv )
+19f0 ff80  # Analog Register (vdrv / v1p3_reg)
+19fe b75a  # Analog Register (agc/agc1 )
+1902 0200  # SM_Cntr_target_final
+1912 3fc0  # OW_Th_q
+1942 b3fc  # all phase enabled
+19f3 ae50  # phase_addcap
+19a5 0000  # post3=0
+19a7 0000  # post2=0
+19a9 fe00  # post1=-2
+19ab 1400  # main=20
+19ad fc00  # precursor=-4
+19a0 eb00  # Tx PRBS Control ( TX INVERSION )
+1943 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1948 2933
+#1949 5c96
+#194a edff
+1948 08a4
+1949 dc96
+194a edde
+1921 00f0   # CTLE=7
+19fd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1920 03c0 # Kf/Kp
+194b 2802 # local rotator
+194b 3802
+
+
+####### B3 PAM4
+
+
+#1cff d36c  # DC coupled Tx/Rx
+1cff eb6c  # AC coupled Tx/Rx
+1c00 106b  # State Machine Reset Control
+#1c03 7933  #*****
+1c03 78b3 # SM_SD_Th
+1c04 b000  #*****
+1c05 bd6b  #*****
+1c07 2aa8  #*****
+#1c07 2ac8  #*****
+1c0a 6571  #*****
+1c10 0100  #*****
+1c4b 1802  #*****
+1cfc b2b1  # FFE Gain Control ( Main / Sum )
+1cfb 3333  # FFE delay
+1cfa 00a0  # ctle_addcap=0
+1cf1 67fc  # Analog Register (vdrv )
+1cf0 ff80  # Analog Register (vdrv / v1p3_reg)
+1cfe b75a  # Analog Register (agc/agc1 )
+1c02 0200  # SM_Cntr_target_final
+1c12 3ec0  # OW_Th_q
+1c42 b3fc  # all phase enabled
+1cf3 ae40  # phase_addcap
+1ca5 0000  # post3=0
+1ca7 0000  # post2=0
+1ca9 fe00  # post1=-2
+1cab 1400  # main=20
+1cad fc00  # precursor=-4
+1ca0 eb00  # Tx PRBS Control ( TX INVERSION )
+1c43 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1c48 2933
+#1c49 5c96
+#1c4a edff
+1c48 08a4
+1c49 dc96
+1c4a edde
+1c21 00f0   # CTLE=7
+1cfd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1c20 03c0 # Kf/Kp
+1c4b 2802 # local rotator
+1c4b 3802
+
+#1dff d36c  # DC coupled Tx/Rx
+1dff eb6c  # AC coupled Tx/Rx
+1d00 106b  # State Machine Reset Control
+#1d03 7933  #*****
+1d03 78b3 # SM_SD_Th
+1d04 b000  #*****
+1d05 bd6b  #*****
+1d07 2aa8  #*****
+#1d07 2ac8  #*****
+1d0a 6571  #*****
+1d10 0100  #*****
+1d4b 1802  #*****
+1dfc b2b1  # FFE Gain Control ( Main / Sum )
+1dfb 3333  # FFE delay
+1dfa 00a0  # ctle_addcap=0
+1df1 67fc  # Analog Register (vdrv )
+1df0 ff80  # Analog Register (vdrv / v1p3_reg)
+1dfe b75a  # Analog Register (agc/agc1 )
+1d02 0200  # SM_Cntr_target_final
+1d12 3ec0  # OW_Th_q
+1d42 b3fc  # all phase enabled
+1df3 8e40  # phase_addcap
+1da5 0000  # post3=0
+1da7 0000  # post2=0
+1da9 fe00  # post1=-2
+1dab 1400  # main=20
+1dad fc00  # precursor=-4
+1da0 eb00  # Tx PRBS Control ( TX INVERSION )
+1d43 8cfa  # Rx PRBS Control ( RX INVERSION )
+#1d48 2933
+#1d49 5c96
+#1d4a edff
+1d48 08a4
+1d49 dc96
+1d4a edde
+1d21 00f0   # CTLE=7
+1dfd 6cfc  # agcGain1=0011 (agcGain2= 1111 )
+1d20 03c0 # Kf/Kp
+1d4b 2802 # local rotator
+1d4b 3802
+
+#########HB NRZ Setting
+
+# HummingBird PLL Setup (NRZ)
+
+#A0
+24ff 1db0 # div=1
+24f6 fdc0
+24f3 5336
+24f2 6eb6
+
+24ef 8020 # phase rotator
+24f5 219a # Tx 25.78 Gbaud 
+24f4 3244 # 
+24fe 219a # Rx 25.78 Gbaud
+24fd 3248 # 
+
+#A1
+29ff 1db0 # div=1
+29f6 fdc0
+29f3 5336
+29f2 6eb6
+
+29ef 8020 # phase rotator
+29f5 219a # Tx 25.78 Gbaud 
+29f4 3244 # 
+29fe 219a # Rx 25.78 Gbaud
+29fd 3248 # 
+
+#A2
+34ff 1db0 # div=1
+34f6 fdc0
+34f3 5336
+34f2 6eb6
+
+34ef 8020 # phase rotator
+34f5 219a # Tx 25.78 Gbaud 
+34f4 3244 # 
+34fe 219a # Rx 25.78 Gbaud
+34fd 3248 # 
+
+#A3
+39ff 1db0 # div=1
+39f6 fdc0
+39f3 5336
+39f2 6eb6
+
+39ef 8020 # phase rotator
+39f5 219a # Tx 25.78 Gbaud 
+39f4 3244 # 
+39fe 219a # Rx 25.78 Gbaud
+39fd 3248 # 
+
+# DISABLE RECOVERED CLK MODE 
+
+#24f6 fd80 # Recovery clk [6] 0
+#24f5 2098 # TX / 128T
+
+#29f6 fd80 # Recovery clk [6] 0
+#29f5 2098 # TX / 128T 
+
+#34f6 fd80 # Recovery clk [6] 0
+#34f5 2098 # TX / 128T 
+
+#39f6 fd80 # Recovery clk [6] 0
+#39f5 2098 # TX / 128T 
+
+# NRZ Per Lane Registers
+
+########## A0 
+
+# A0 Lane 0
+
+20ff 8882  # AC coupled
+#20ff 8802 # DC coupled
+
+204a 7460
+20a0 eb00  # Tx PRBS31 
+2042 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+204b 06db  # addcap
+2000 106b
+2001 6100  # Cntr_target = 100
+2003 7933
+2006 762d
+2007 66ab
+200a 662c
+200e 3400
+2010 101a
+201d 00d0  # Rx CTLE=5
+201c 0340  # Kf/Kp
+201f 0080
+203b 0000
+203c 5244
+203d 0000
+203e 0000
+2041 f3df   # up/dn ratio 7/4
+2047 0831
+2048 0518
+2049 75e7
+20ef 0000
+20f5 8db6
+20f6 4500  # Tx pre=-5 main=20
+#20f6 5100  # tx drive strength
+20fd 4246
+20fe 417c
+
+# A0 Lane 1
+
+21ff 8882  # AC coupled
+#21ff 8802 # DC coupled
+
+214a 7460
+21a0 eb00  # Tx PRBS31 
+2142 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+214b 06db  # addcap
+2100 106b
+2101 6100  # Cntr_target = 100
+2103 7933
+2106 762d
+2107 66ab
+210a 662c
+210e 3400
+2110 101a
+211d 00d0  # Rx CTLE=5
+211c 0340  # Kf/Kp
+211f 0080
+213b 0000
+213c 5244
+213d 0000
+213e 0000
+2141 f3df   # up/dn ratio 7/4
+2147 0831
+2148 0518
+2149 75e7
+21ef 0000
+21f5 8db6
+21f6 4500  # Tx pre=-5 main=20
+#21f6 5100  # tx drive strength
+21fd 4246
+21fe 417c
+
+# A0 Lane 2
+
+22ff 8882  # AC coupled
+#22ff 8802 # DC coupled
+
+224a 7460
+22a0 eb00  # Tx PRBS31 
+2242 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+224b 06db  # addcap
+2200 106b
+2201 6100  # Cntr_target = 100
+2203 7933
+2206 762d
+2207 66ab
+220a 662c
+220e 3400
+2210 101a
+221d 00d0  # Rx CTLE=5
+221c 0340  # Kf/Kp
+221f 0080
+223b 0000
+223c 5244
+223d 0000
+223e 0000
+2241 f3df   # up/dn ratio 7/4
+2247 0831
+2248 0518
+2249 75e7
+22ef 0000
+22f5 8db6
+22f6 4500  # Tx pre=-5 main=20
+#22f6 5100  # tx drive strength
+22fd 4246
+22fe 417c
+
+# A0 Lane 3
+
+23ff 8882  # AC coupled
+#23ff 8802 # DC coupled
+
+234a 7460
+23a0 eb00  # Tx PRBS31 
+2342 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+234b 06db  # addcap
+2300 106b
+2301 6100  # Cntr_target = 100
+2303 7933
+2306 762d
+2307 66ab
+230a 662c
+230e 3400
+2310 101a
+231d 00d0  # Rx CTLE=5
+231c 0340  # Kf/Kp
+231f 0080
+233b 0000
+233c 5244
+233d 0000
+233e 0000
+2341 f3df   # up/dn ratio 7/4
+2347 0831
+2348 0518
+2349 75e7
+23ef 0000
+23f5 8db6
+23f6 4500  # Tx pre=-5 main=20
+#23f6 5100  # tx drive strength
+23fd 4246
+23fe 417c
+
+########## A1 
+
+# A1 Lane 0
+
+25ff 8882  # AC coupled
+#25ff 8802 # DC coupled
+
+254a 7460
+25a0 eb00  # Tx PRBS31 
+2542 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+254b 06db  # addcap
+2500 106b
+2501 6100  # Cntr_target = 100
+2503 7933
+2506 762d
+2507 66ab
+250a 662c
+250e 3400
+2510 101a
+251d 00d0  # Rx CTLE=5
+251c 0340  # Kf/Kp
+251f 0080
+253b 0000
+253c 5244
+253d 0000
+253e 0000
+2541 f3df   # up/dn ratio 7/4
+2547 0831
+2548 0518
+2549 75e7
+25ef 0000
+25f5 8db6
+25f6 4500  # Tx pre=-5 main=20
+#25f6 5100  # tx drive strength
+25fd 4246
+25fe 417c
+
+# A1 Lane 1
+
+26ff 8882  # AC coupled
+#26ff 8802 # DC coupled
+
+264a 7460
+26a0 eb00  # Tx PRBS31 
+2642 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+264b 06db  # addcap
+2600 106b
+2601 6100  # Cntr_target = 100
+2603 7933
+2606 762d
+2607 66ab
+260a 662c
+260e 3400
+2610 101a
+261d 00d0  # Rx CTLE=5
+261c 0340  # Kf/Kp
+261f 0080
+263b 0000
+263c 5244
+263d 0000
+263e 0000
+2641 f3df   # up/dn ratio 7/4
+2647 0831
+2648 0518
+2649 75e7
+26ef 0000
+26f5 8db6
+26f6 4500  # Tx pre=-5 main=20
+#26f6 5100  # tx drive strength
+26fd 4246
+26fe 417c
+
+# A1 Lane 2
+
+27ff 8882  # AC coupled
+#27ff 8802 # DC coupled
+
+274a 7460
+27a0 eb00  # Tx PRBS31 
+2742 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+274b 06db  # addcap
+2700 106b
+2701 6100  # Cntr_target = 100
+2703 7933
+2706 762d
+2707 66ab
+270a 662c
+270e 3400
+2710 101a
+271d 00d0  # Rx CTLE=5
+271c 0340  # Kf/Kp
+271f 0080
+273b 0000
+273c 5244
+273d 0000
+273e 0000
+2741 f3df   # up/dn ratio 7/4
+2747 0831
+2748 0518
+2749 75e7
+27ef 0000
+27f5 8db6
+27f6 4500  # Tx pre=-5 main=20
+#27f6 5100  # tx drive strength
+27fd 4246
+27fe 417c
+
+# A1 Lane 3
+
+28ff 8882  # AC coupled
+#28ff 8802 # DC coupled
+
+284a 7460
+28a0 eb00  # Tx PRBS31 
+2842 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+284b 06db  # addcap
+2800 106b
+2801 6100  # Cntr_target = 100
+2803 7933
+2806 762d
+2807 66ab
+280a 662c
+280e 3400
+2810 101a
+281d 00d0  # Rx CTLE=5
+281c 0340  # Kf/Kp
+281f 0080
+283b 0000
+283c 5244
+283d 0000
+283e 0000
+2841 f3df   # up/dn ratio 7/4
+2847 0831
+2848 0518
+2849 75e7
+28ef 0000
+28f5 8db6
+28f6 4500  # Tx pre=-5 main=20
+#28f6 5100  # tx drive strength
+28fd 4246
+28fe 417c
+
+########## A2 
+
+# A2 Lane 0
+
+30ff 8882  # AC coupled
+#30ff 8802 # DC coupled
+
+304a 7460
+30a0 eb00  # Tx PRBS31 
+3042 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+304b 06db  # addcap
+3000 106b
+3001 6100  # Cntr_target = 100
+3003 7933
+3006 762d
+3007 66ab
+300a 662c
+300e 3400
+3010 101a
+301d 00d0  # Rx CTLE=5
+301c 0340  # Kf/Kp
+301f 0080
+303b 0000
+303c 5244
+303d 0000
+303e 0000
+3041 f3df   # up/dn ratio 7/4
+3047 0831
+3048 0518
+3049 75e7
+30ef 0000
+30f5 8db6
+30f6 4500  # Tx pre=-5 main=20
+#30f6 5100  # tx drive strength
+30fd 4246
+30fe 417c
+
+# A2 Lane 1
+
+31ff 8882  # AC coupled
+#31ff 8802 # DC coupled
+
+314a 7460
+31a0 eb00  # Tx PRBS31 
+3142 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+314b 06db  # addcap
+3100 106b
+3101 6100  # Cntr_target = 100
+3103 7933
+3106 762d
+3107 66ab
+310a 662c
+310e 3400
+3110 101a
+311d 00d0  # Rx CTLE=5
+311c 0340  # Kf/Kp
+311f 0080
+313b 0000
+313c 5244
+313d 0000
+313e 0000
+3141 f3df   # up/dn ratio 7/4
+3147 0831
+3148 0518
+3149 75e7
+31ef 0000
+31f5 8db6
+31f6 4500  # Tx pre=-5 main=20
+#31f6 5100  # tx drive strength
+31fd 4246
+31fe 417c
+
+# A2 Lane 2
+
+32ff 8882  # AC coupled
+#32ff 8802 # DC coupled
+
+324a 7460
+32a0 eb00  # Tx PRBS31 
+3242 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+324b 06db  # addcap
+3200 106b
+3201 6100  # Cntr_target = 100
+3203 7933
+3206 762d
+3207 66ab
+320a 662c
+320e 3400
+3210 101a
+321d 00d0  # Rx CTLE=5
+321c 0340  # Kf/Kp
+321f 0080
+323b 0000
+323c 5244
+323d 0000
+323e 0000
+3241 f3df   # up/dn ratio 7/4
+3247 0831
+3248 0518
+3249 75e7
+32ef 0000
+32f5 8db6
+32f6 4500  # Tx pre=-5 main=20
+#32f6 5100  # tx drive strength
+32fd 4246
+32fe 417c
+
+# A2 Lane 3
+
+33ff 8882  # AC coupled
+#33ff 8802 # DC coupled
+
+334a 7460
+33a0 eb00  # Tx PRBS31 
+3342 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+334b 06db  # addcap
+3300 106b
+3301 6100  # Cntr_target = 100
+3303 7933
+3306 762d
+3307 66ab
+330a 662c
+330e 3400
+3310 101a
+331d 00d0  # Rx CTLE=5
+331c 0340  # Kf/Kp
+331f 0080
+333b 0000
+333c 5244
+333d 0000
+333e 0000
+3341 f3df   # up/dn ratio 7/4
+3347 0831
+3348 0518
+3349 75e7
+33ef 0000
+33f5 8db6
+33f6 4500  # Tx pre=-5 main=20
+#33f6 5100  # tx drive strength
+33fd 4246
+33fe 417c
+
+########## A3 
+
+# A3 Lane 0
+
+35ff 8882  # AC coupled
+#35ff 8802 # DC coupled
+
+354a 7460
+35a0 eb00  # Tx PRBS31 
+3542 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+354b 06db  # addcap
+3500 106b
+3501 6100  # Cntr_target = 100
+3503 7933
+3506 762d
+3507 66ab
+350a 662c
+350e 3400
+3510 101a
+351d 00d0  # Rx CTLE=5
+351c 0340  # Kf/Kp
+351f 0080
+353b 0000
+353c 5244
+353d 0000
+353e 0000
+3541 f3df   # up/dn ratio 7/4
+3547 0831
+3548 0518
+3549 75e7
+35ef 0000
+35f5 8db6
+35f6 4500  # Tx pre=-5 main=20
+#35f6 5100  # tx drive strength
+35fd 4246
+35fe 417c
+
+# A3 Lane 1
+
+36ff 8882  # AC coupled
+#36ff 8802 # DC coupled
+
+364a 7460
+36a0 eb00  # Tx PRBS31 
+3642 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+364b 06db  # addcap
+3600 106b
+3601 6100  # Cntr_target = 100
+3603 7933
+3606 762d
+3607 66ab
+360a 662c
+360e 3400
+3610 101a
+361d 00d0  # Rx CTLE=5
+361c 0340  # Kf/Kp
+361f 0080
+363b 0000
+363c 5244
+363d 0000
+363e 0000
+3641 f3df   # up/dn ratio 7/4
+3647 0831
+3648 0518
+3649 75e7
+36ef 0000
+36f5 8db6
+36f6 4500  # Tx pre=-5 main=20
+#36f6 5100  # tx drive strength
+36fd 4246
+36fe 417c
+
+# A3 Lane 2
+
+37ff 8882  # AC coupled
+#37ff 8802 # DC coupled
+
+374a 7460
+37a0 eb00  # Tx PRBS31 
+3742 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+374b 06db  # addcap
+3700 106b
+3701 6100  # Cntr_target = 100
+3703 7933
+3706 762d
+3707 66ab
+370a 662c
+370e 3400
+3710 101a
+371d 00d0  # Rx CTLE=5
+371c 0340  # Kf/Kp
+371f 0080
+373b 0000
+373c 5244
+373d 0000
+373e 0000
+3741 f3df   # up/dn ratio 7/4
+3747 0831
+3748 0518
+3749 75e7
+37ef 0000
+37f5 8db6
+37f6 4500  # Tx pre=-5 main=20
+#37f6 5100  # tx drive strength
+37fd 4246
+37fe 417c
+
+# A3 Lane 3
+
+38ff 8882  # AC coupled
+#38ff 8802 # DC coupled
+
+384a 7460
+38a0 eb00  # Tx PRBS31 
+3842 b3cf  # Rx PRBS31 / Rx flip (bit[0])
+384b 06db  # addcap
+3800 106b
+3801 6100  # Cntr_target = 100
+3803 7933
+3806 762d
+3807 66ab
+380a 662c
+380e 3400
+3810 101a
+381d 00d0  # Rx CTLE=5
+381c 0340  # Kf/Kp
+381f 0080
+383b 0000
+383c 5244
+383d 0000
+383e 0000
+3841 f3df   # up/dn ratio 7/4
+3847 0831
+3848 0518
+3849 75e7
+38ef 0000
+38f5 8db6
+38f6 4500  # Tx pre=-5 main=20
+#38f6 5100  # tx drive strength
+38fd 4246
+38fe 417c
+
+
+################################### CONFIG MUX MODE##############################
+
+3F0E 5555   # Loopback Mode
+3F0F 5555   # Loopback Mode
+
+
+# Switch to Functional Mode
+
+#20a0 8300  # A0 Functional mode
+#21a0 8300
+#22a0 8300
+#23a0 8300
+
+#25a0 8300  # A1 Functional mode
+#26a0 8300
+#27a0 8300
+#28a0 8300
+
+#30a0 8300  # A2 Tx Functional mode
+#31a0 8300
+#32a0 8300
+#33a0 8300
+
+#35a0 8300  # A3 Tx Functional mode
+#36a0 8300
+#37a0 8300
+#38a0 8300
+
+#2042 b3c1  # A0 Rx checker disable
+#2142 b3c1
+#2242 b3c1
+#2342 b3c1
+
+#2542 b3c1  # A1 Rx checker disable
+#2642 b3c1
+#2742 b3c1
+#2842 b3c1
+
+#3042 b3c1  # A2 Rx checker disable
+#3142 b3c1
+#3242 b3c1
+#3342 b3c1
+
+#3542 b3c1  # A3 Rx checker disable
+#3642 b3c1
+#3742 b3c1
+#3842 b3c1
+
+#10a0 8380  # B0 Functional mode
+#11a0 8380
+#14a0 8380  # B1 Functional mode
+#15a0 8380
+#18a0 8380  # B2 Functional mode
+#19a0 8380
+#1ca0 8380  # B3 Functional mode
+#1da0 8380
+
+#1043 8c82  # B0 Rx checker off
+#1143 8c82
+#1443 8c82  # B1 Rx checker off
+#1543 8c82
+#1843 8c82  # B2 Rx checker off
+#1943 8c82
+#1c43 8c82  # B3 Rx checker off
+#1d43 8c82
+
+
+
+############## LANE RESETS ####################
+
+# Lane Resets
+
+# PAM4
+1000 906b
+1100 906b
+1400 906b
+1500 906b
+1800 906b
+1900 906b
+1c00 906b
+1d00 906b
+
+1000 106b
+1100 106b
+1400 106b
+1500 106b
+1800 106b
+1900 106b
+1c00 106b
+1d00 106b
+
+# NRZ 
+2000 906b
+2100 906b
+2200 906b
+2300 906b
+2500 906b
+2600 906b
+2700 906b
+2800 906b
+3000 906b
+3100 906b
+3200 906b
+3300 906b
+3500 906b
+3600 906b
+3700 906b
+3800 906b
+
+2000 106b
+2100 106b
+2200 106b
+2300 106b
+2500 106b
+2600 106b
+2700 106b
+2800 106b
+3000 106b
+3100 106b
+3200 106b
+3300 106b
+3500 106b
+3600 106b
+3700 106b
+3800 106b
+
+# Logic Reset
+
+3f18 0777  # Logic Reset
+3f18 0000  # Clear Reset
+

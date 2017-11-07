@@ -1,0 +1,366 @@
+---- script Matches (32 in 4 files) ----
+Falcon_GUI in Falcon_GUI.py :         self.option_menu.add_command(label='Load Alternate Script',
+Falcon_GUI.Fetch.__init__ in Falcon_GUI.py :         self.master.title('Load Alternate Script')
+Falcon_GUI.Fetch.__init__ in Falcon_GUI.py :         self.label = Label(self.frame, text='Current Script:')
+Falcon_GUI.Fetch.__init__ in Falcon_GUI.py :         self.new_script = Label(self.frame, text=script, bg='white', relief='sunken', bd=3)
+Falcon_GUI.Fetch.__init__ in Falcon_GUI.py :         self.change_button = Button(self.frame, text='Load Script',
+Falcon_GUI in Falcon_GUI.py :     global script
+Falcon_GUI in Falcon_GUI.py :     script = 'Falcon_CHRIS2.txt'
+Falcon_GUI in Falcon_GUI.py :         test.LoadScript(script)
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest in Falcon_PowerCycleTest_V1.0_SLT.py :     def testonce(self,filename = 'test',script = '123',time = 1):       
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.testonce in Falcon_PowerCycleTest_V1.0_SLT.py :             self.api.LoadScript(script)
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest in Falcon_PowerCycleTest_V1.0_SLT.py :     def autotest(self,filename = 'test',script = 'xx.txt',times = 5):
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.autotest in Falcon_PowerCycleTest_V1.0_SLT.py :             data = self.testonce(filename,script,time)
+Falcon_PowerCycleTest_V1.0_SLT in Falcon_PowerCycleTest_V1.0_SLT.py :     script = 'Falcon_CHRIS2.txt'
+Falcon_PowerCycleTest_V1.0_SLT in Falcon_PowerCycleTest_V1.0_SLT.py :     test.autotest(filename,script,times)
+modules.xml (.idea) line 5 :       <module fileurl="file://$PROJECT_DIR$/.idea/Falconer Script.iml" filepath="$PROJECT_DIR$/.idea/Falconer Script.iml" />
+workspace.xml (.idea) line 135 :         <option value="Python Script" />
+workspace.xml (.idea) line 183 :               <option name="myItemId" value="Falconer Script" />
+workspace.xml (.idea) line 197 :               <option name="myItemId" value="Falconer Script" />
+workspace.xml (.idea) line 201 :               <option name="myItemId" value="Falconer Script" />
+workspace.xml (.idea) line 238 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 255 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 272 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 289 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 306 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 323 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 338 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 350 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 369 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 388 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 409 :       <module name="Falconer Script" />
+workspace.xml (.idea) line 431 :       <module name="Falconer Script" />
+---- script Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- load_window Matches (3 in 2 files) ----
+Falcon_GUI in Falcon_GUI.py :                                      command=self.load_window)
+Falcon_GUI in Falcon_GUI.py :     def load_window(self):
+GuiInterface.MainWindow in GuiInterface.py :     def load_window(self):
+---- load_window Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- MainWindow Matches (145 in 3 files) ----
+GuiInterface in GuiInterface.py : class MainWindow(QMainWindow,Ui_MainWindow,LIB):
+GuiInterface.MainWindow.__init__ in GuiInterface.py :         super(MainWindow,self).__init__(parent)
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR1_LS_label.setText(QtGui.QApplication.translate("MainWindow", "111111", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR1_EM_label.setText(QtGui.QApplication.translate("MainWindow", "222222", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR1_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR1_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR2_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR2_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR2_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR2_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR3_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR3_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR3_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR3_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR4_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR4_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR4_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP1_AR4_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR1_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR1_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR1_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR1_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR2_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR2_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR2_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR2_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR3_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR3_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR3_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR3_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR4_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR4_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR4_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.QSFP2_AR4_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP1_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "666666", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP1_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP1_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP1_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP2_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP2_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP2_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP2_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP3_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP3_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP3_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP3_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP4_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP4_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP4_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+GuiInterface.MainWindow.refresh_GUI in GuiInterface.py :         self.SFP4_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+MainApp in MainApp.py : from GuiInterface import MainWindow
+MainApp in MainApp.py :         window = MainWindow(QMainWindow,Ui_MainWindow,lib)#MyApp()
+WinGui_PySide.Ui_MainWindow in WinGui_PySide.py :     def setupUi(self, MainWindow):
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         MainWindow.setObjectName("MainWindow")
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         MainWindow.resize(935, 635)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         self.centralwidget = QtGui.QWidget(MainWindow)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         MainWindow.setCentralWidget(self.centralwidget)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         self.menubar = QtGui.QMenuBar(MainWindow)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         MainWindow.setMenuBar(self.menubar)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         self.statusbar = QtGui.QStatusBar(MainWindow)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         MainWindow.setStatusBar(self.statusbar)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         self.retranslateUi(MainWindow)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+WinGui_PySide.Ui_MainWindow in WinGui_PySide.py :     def retranslateUi(self, MainWindow):
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "MainWindow", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.groupBox.setTitle(QtGui.QApplication.translate("MainWindow", "QSFP1", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_10.setText(QtGui.QApplication.translate("MainWindow", "AR1", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_11.setText(QtGui.QApplication.translate("MainWindow", "AR2", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_12.setText(QtGui.QApplication.translate("MainWindow", "AR3", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_13.setText(QtGui.QApplication.translate("MainWindow", "AR4", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR1_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR1_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR1_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR1_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR2_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR2_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR2_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR2_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR3_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR3_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR3_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR3_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR4_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR4_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR4_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP1_AR4_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.groupBox_3.setTitle(QtGui.QApplication.translate("MainWindow", "SFP1", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP1_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP1_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP1_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_14.setText(QtGui.QApplication.translate("MainWindow", "AR1", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP1_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.groupBox_4.setTitle(QtGui.QApplication.translate("MainWindow", "SFP2", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP2_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_15.setText(QtGui.QApplication.translate("MainWindow", "AR2", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP2_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP2_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP2_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.groupBox_5.setTitle(QtGui.QApplication.translate("MainWindow", "SFP3", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP3_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP3_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP3_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP3_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_16.setText(QtGui.QApplication.translate("MainWindow", "AR3", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.groupBox_6.setTitle(QtGui.QApplication.translate("MainWindow", "SFP4", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP4_AR_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP4_AR_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_17.setText(QtGui.QApplication.translate("MainWindow", "AR4", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP4_AR_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.SFP4_AR_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label.setText(QtGui.QApplication.translate("MainWindow", "Link Status", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_2.setText(QtGui.QApplication.translate("MainWindow", "Eye Margin", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_3.setText(QtGui.QApplication.translate("MainWindow", "BER", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_4.setText(QtGui.QApplication.translate("MainWindow", "Pass/Fail", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_5.setText(QtGui.QApplication.translate("MainWindow", "Pass/Fail", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_6.setText(QtGui.QApplication.translate("MainWindow", "Link Status", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_7.setText(QtGui.QApplication.translate("MainWindow", "BER", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_8.setText(QtGui.QApplication.translate("MainWindow", "Eye Margin", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.pushButton.setText(QtGui.QApplication.translate("MainWindow", "Reset All", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_9.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.groupBox_2.setTitle(QtGui.QApplication.translate("MainWindow", "QSFP2", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_30.setText(QtGui.QApplication.translate("MainWindow", "AR1", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_31.setText(QtGui.QApplication.translate("MainWindow", "AR2", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_32.setText(QtGui.QApplication.translate("MainWindow", "AR3", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.label_33.setText(QtGui.QApplication.translate("MainWindow", "AR4", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR1_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR1_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR1_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR1_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR2_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR2_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR2_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR2_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR3_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR3_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR3_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR3_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR4_LS_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR4_PF_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR4_EM_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.QSFP2_AR4_BR_label.setText(QtGui.QApplication.translate("MainWindow", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.menuOptions.setTitle(QtGui.QApplication.translate("MainWindow", "Options", None, QtGui.QApplication.UnicodeUTF8))
+---- MainWindow Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- Fetch Matches (3 in 2 files) ----
+Falcon_GUI.load_window in Falcon_GUI.py :         what = Fetch(new)
+Falcon_GUI in Falcon_GUI.py : class Fetch:
+GuiInterface.load_window in GuiInterface.py :         what = Fetch(new)
+---- Fetch Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- load_window Matches (3 in 2 files) ----
+Falcon_GUI in Falcon_GUI.py :                                      command=self.load_window)
+Falcon_GUI in Falcon_GUI.py :     def load_window(self):
+GuiInterface in GuiInterface.py :     def load_window(self):
+---- load_window Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- testGPIO Matches (3 in 2 files) ----
+Falcon_GUI in Falcon_GUI.py :                                  command=self.testGPIO)
+Falcon_GUI in Falcon_GUI.py :     def testGPIO(self):
+GuiInterface in GuiInterface.py :     def testGPIO(self):
+---- testGPIO Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- pushButton Matches (6 in 0 files) ----
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         self.pushButton = QtGui.QPushButton(self.centralwidget)
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         self.pushButton.setGeometry(QtCore.QRect(410, 520, 111, 31))
+WinGui_PySide.Ui_MainWindow.setupUi in WinGui_PySide.py :         self.pushButton.setObjectName("pushButton")
+WinGui_PySide.Ui_MainWindow.retranslateUi in WinGui_PySide.py :         self.pushButton.setText(QtGui.QApplication.translate("MainWindow", "Reset All", None, QtGui.QApplication.UnicodeUTF8))
+---- refresh_GUI2 Matches (7 in 2 files) ----
+GuiInterface.timerEvent in GuiInterface.py :         self.refresh_GUI2()
+GuiInterface in GuiInterface.py :         self.refresh_GUI2()
+GuiInterface.func in GuiInterface.py :         self.refresh_GUI2()
+GuiInterface in GuiInterface.py :     def refresh_GUI2(self):
+GuiInterface in GuiInterface.py : #        timer = threading.Timer(20, self.refresh_GUI2())
+MainApp in MainApp.py : #    window.refresh_GUI2()
+MainApp in MainApp.py : #        window.refresh_GUI2()
+---- refresh_GUI2 Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- cr_write_i2c_AC_8 Matches (5 in 3 files) ----
+CredoUsbDongle.LibBase in CredoUsbDongle.py :     def cr_write_i2c_AC_8(self, regAddr, data, i2cAddr):
+CredoUsbDongle.LibBase.cr_write_i2c_AC_8 in CredoUsbDongle.py :         fun = self.usb.lib.cr_write_i2c_AC_8
+falcon.Falcon_lib in falcon.py : 	def cr_write_i2c_AC_8(self, regAddr, data, i2cAddr):
+falcon.Falcon_lib.cr_write_i2c_AC_8 in falcon.py : 		fun = self.usb.lib.cr_write_i2c_AC_8
+MainApp in MainApp.py :     lib.cr_write_i2c_AC_8(0x10, 0x20)
+---- cr_write_i2c_AC_8 Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
+---- print Matches (128 in 8 files) ----
+CredoUsbDongle.CredoUsbDongle.__init__ in CredoUsbDongle.py :             print 'Your platform is unsupported!'
+CredoUsbDongle.CredoUsbDongle in CredoUsbDongle.py :     #     print A
+CredoUsbDongle.CredoNdUsbDongle.__init__ in CredoUsbDongle.py :             print 'Your platform is unsupported!'
+falcon.Falcon_lib.Falcon_EM_Vert_read_progress_B in falcon.py : 			#print "em_vert_read_progress_B"
+falcon.Falcon_lib.Falcon_EM_Vert_read_progress_B in falcon.py : 			print "em_vert_read_progress"
+falcon.Falcon_lib.M_Falcon_DAC_value_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializeFUN_TX_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePRBS_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePRBS_TX_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePattern_1T_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePattern_2T_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePattern_4T_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePattern_8T_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePattern_16T_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePreDriver_TX_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_InitializePostDriver_TX_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Link_Status_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_OW_agc_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_PRBS_err_inject_TX_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_RX_reverse_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_ReadDriver_pre_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_ReadDriver_post_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_Eyemargin_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_F1_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_F2_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_F3_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_OW_agc_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_PRBS_cntr_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_PRBSMode_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_RX_reverse_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_TX_reverse_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Reset_PRBS_Cntr_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Reset_SM_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_TX_reverse_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_PRBSMode_TX_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.M_Falcon_Read_PRBSMode_TX_NRZ_B in falcon.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon.Falcon_lib.DumpStateMachine in falcon.py : 		print ("===========================State machine=============================")
+falcon.Falcon_lib.DumpRX in falcon.py : 		print ("=================================RX==================================")
+falcon.Falcon_lib.DumpTX in falcon.py : 		print ("=================================TX==================================")
+falcon.Falcon_lib.DumpAnalog in falcon.py : 		print ("==============================Analog=================================")
+falcon.Falcon_lib.DumpPLL in falcon.py : 		print ("================================PLL==================================")
+falcon.Falcon_lib.DumpCPU in falcon.py : 		print ("================================CPU==================================")
+falcon.Falcon_lib.DumpCPU in falcon.py : 		print '%25s   %s' % (name, value)
+falcon.Falcon_lib.DumpCPU in falcon.py : 		print '%25s   %s' % (name, value)
+falcon in falcon.py : 		print "%x"%falcon.Falcon_Read_PRBS_cntr(1)
+falcon in falcon.py : 		print "%x"%falcon.Falcon_Read_F1(1)
+falcon in falcon.py : 		print "%x"%falcon.Falcon_Read_F2(1)
+falcon in falcon.py : 		print "%x"%falcon.Falcon_Read_F3(1)
+falcon in falcon.py : 			print falcon.Falcon_Read_DTL_RX(1)
+falcon in falcon.py : 		print a
+falcon in falcon.py : 		print '%x'%falcon.MdioRd(0x800b)
+falcon in falcon.py : 		print cm.shape
+Falcon_GUI.print_click in Falcon_GUI.py :         print 'You right clicked!'
+Falcon_GUI.testGPIO in Falcon_GUI.py :         print "addr %x's value0x%x" %(adr,a)
+falcon_lib.__init__ in falcon_lib.py : 			print 'Your platform is unsupported!'
+falcon_lib.CredoUsbDongle.__init__ in falcon_lib.py : 			print 'Your platform is unsupported!'
+falcon_lib.Falcon_lib.Falcon_EM_Vert_read_progress_B in falcon_lib.py : 			#print "em_vert_read_progress_B"
+falcon_lib.Falcon_lib.Falcon_EM_Vert_read_progress_B in falcon_lib.py : 			print "em_vert_read_progress"
+falcon_lib.Falcon_lib.M_Falcon_DAC_value_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializeFUN_TX_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePRBS_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePRBS_TX_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePattern_1T_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePattern_2T_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePattern_4T_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePattern_8T_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePattern_16T_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePreDriver_TX_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_InitializePostDriver_TX_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Link_Status_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_OW_agc_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_PRBS_err_inject_TX_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_RX_reverse_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_ReadDriver_pre_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_ReadDriver_post_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_Eyemargin_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_F1_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_F2_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_F3_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_OW_agc_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_PRBS_cntr_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_PRBSMode_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_RX_reverse_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_TX_reverse_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Reset_PRBS_Cntr_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Reset_SM_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_TX_reverse_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_PRBSMode_TX_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.M_Falcon_Read_PRBSMode_TX_NRZ_B in falcon_lib.py : 				print '%sL%d: %lf' % (self.macros[(lane / 4)], lane % 4, value_list[index])
+falcon_lib.Falcon_lib.DumpStateMachine in falcon_lib.py : 		print ("===========================State machine=============================")
+falcon_lib.Falcon_lib.DumpRX in falcon_lib.py : 		print ("=================================RX==================================")
+falcon_lib.Falcon_lib.DumpTX in falcon_lib.py : 		print ("=================================TX==================================")
+falcon_lib.Falcon_lib.DumpAnalog in falcon_lib.py : 		print ("==============================Analog=================================")
+falcon_lib.Falcon_lib.DumpPLL in falcon_lib.py : 		print ("================================PLL==================================")
+falcon_lib in falcon_lib.py : 		print "%x"%falcon.Falcon_Read_PRBS_cntr(1)
+falcon_lib in falcon_lib.py : 		print "%x"%falcon.Falcon_Read_F1(1)
+falcon_lib in falcon_lib.py : 		print "%x"%falcon.Falcon_Read_F2(1)
+falcon_lib in falcon_lib.py : 		print "%x"%falcon.Falcon_Read_F3(1)
+falcon_lib in falcon_lib.py : 			print falcon.Falcon_Read_DTL_RX(1)
+falcon_lib in falcon_lib.py : 		print a
+falcon_lib in falcon_lib.py : 		print '%x'%falcon.MdioRd(0x800b)
+falcon_lib in falcon_lib.py : 		print cm.shape
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.writedata in Falcon_PowerCycleTest_V1.0_SLT.py :             print i
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.writedata in Falcon_PowerCycleTest_V1.0_SLT.py :         print BER
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.Pam4_BER in Falcon_PowerCycleTest_V1.0_SLT.py :             print BER
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.Nrz_BER in Falcon_PowerCycleTest_V1.0_SLT.py :             print BER
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.chipstatus in Falcon_PowerCycleTest_V1.0_SLT.py :         #print Nrz_BER
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.chipstatus in Falcon_PowerCycleTest_V1.0_SLT.py :         #print Pam4_BER
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.chipstatus in Falcon_PowerCycleTest_V1.0_SLT.py :         #print link_s
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.chipstatus in Falcon_PowerCycleTest_V1.0_SLT.py :         #print prbs_s
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.chipstatus in Falcon_PowerCycleTest_V1.0_SLT.py :         #print eyemargin_s
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.chipstatus in Falcon_PowerCycleTest_V1.0_SLT.py :         #print [link_status,prbs,eyemargin,tap_F1,tap_F2, tap_F3]
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.testonce in Falcon_PowerCycleTest_V1.0_SLT.py :         print 'init...'
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.testonce in Falcon_PowerCycleTest_V1.0_SLT.py :             print 'MDIO disconnect!!'
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.testonce in Falcon_PowerCycleTest_V1.0_SLT.py :             #print 'init chip...'
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.autotest in Falcon_PowerCycleTest_V1.0_SLT.py :         print 'Start test %d times...'%times
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.autotest in Falcon_PowerCycleTest_V1.0_SLT.py :                 print 'Test (%d/%d) Error~!!!\n'%(i+1,times)
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.autotest in Falcon_PowerCycleTest_V1.0_SLT.py :                     print 'Chip Test (%d/%d) Failed...\n'%(i+1,times)
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.autotest in Falcon_PowerCycleTest_V1.0_SLT.py :                     print 'Chip Test (%d/%d) Pass~!\n'%(i+1,times)
+Falcon_PowerCycleTest_V1.0_SLT.falcon_powercycletest.autotest in Falcon_PowerCycleTest_V1.0_SLT.py :         print '\n Test Done~!'
+GuiInterface.timerEvent in GuiInterface.py :         print 'timer'
+GuiInterface.testGPIO in GuiInterface.py :         print "addr %x's value0x%x" %(adr,a)
+GuiInterface in GuiInterface.py :         print 'Load'
+MainApp in MainApp.py :     print ioDataH
+test.func in test.py :     print 'hello timer!'
+test in test.py : #    print 'main running'
+test in test.py :     print 'ErrorExit(app)'
+test in test.py :     print "addr %x's value0x%x" %(adr,a)
+---- print Search Errors Encountered (1) ----
+The following 1 files could not be processed:
+D:\WorkSpace\MyCode\git\Falconer Script\Falconer Script\falcon_api.dll : File could not be opened.
