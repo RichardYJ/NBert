@@ -9,11 +9,13 @@ from WinGui_PySide import Ui_MainWindow
 from GuiInterface import *
 import time
 from falcon import *
+from ctypes import *
 
 def func():
     print 'hello timer!'
     timer = threading.Timer(1, func)
     timer.start()
+    
 
 #master=Tk()
 #timer = threading.Timer(1, func)
@@ -39,7 +41,7 @@ else:
     a=lib.MdioRd(0)
     print "addr %x's value0x%x" %(adr,a)
 '''
-
+dll = cdll.LoadLibrary('lib.dll')
 lib = Falcon_lib()
 script = 'Falcon_CHRIS2.txt'
 try:
@@ -63,13 +65,15 @@ lib.cr_write_i2c_AC_8(0x4A,0x00, 0x50)
 lib.cr_write_i2c_AC_8(0x4B,0x00, 0x50)
 lib.cr_write_i2c_AC_8(0x4E,0x01, 0x50)
 '''
+
+
+dll.test()
 ioDataH=lib.cr_read_i2c_AC_8(0x0,0x50)
 ioDataL=lib.cr_read_i2c_AC_8(0x0,0x50)
 print '0x%x'%ioDataH
 print '0x%x\n'%ioDataL
-
-
-
+#while(1):
+#    t=0
 
 #mainloop()
 

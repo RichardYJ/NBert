@@ -1,0 +1,3 @@
+LIBRARY lib
+EXPORTS
+test @1

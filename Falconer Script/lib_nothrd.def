@@ -1,0 +1,3 @@
+LIBRARY lib_nothrd
+EXPORTS
+test @1

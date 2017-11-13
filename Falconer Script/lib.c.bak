@@ -1,0 +1,10 @@
+#pragma comment (lib, "falcon_api.lib")
+
+#include <stdio.h>
+
+int test()
+{
+	printf("test =============");
+	
+	
+}

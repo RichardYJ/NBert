@@ -6,6 +6,7 @@ from DialogError import Ui_DialogError
 from DialogLoadScript import Ui_DialogLoadScript
 from PySide import QtCore, QtGui
 from tkFileDialog import askopenfilename
+from ctypes import *
 
 class MainWindow(QMainWindow,Ui_MainWindow):
     
@@ -13,10 +14,12 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         super(MainWindow,self).__init__(parent)
         self.setupUi(self)
         self.lib=lib
+        self.dll = cdll.LoadLibrary('lib_nothrd.dll')    #####################################
         self.count = 0
         self.stop = 0
+        self.rst = 0
         self.initEventMethods()
-        self.testGPIO()     ######yj test
+#        self.testGPIO()     ######yj test
         self.refresh_GUI()
         self.timer = QtCore.QBasicTimer()
         self.timer.start(1000,self)
@@ -114,8 +117,12 @@ class MainWindow(QMainWindow,Ui_MainWindow):
         if self.stop == 1:
             self.timer.stop()
             return
+        self.dll.test()        #####################################
+        self.rst += 1
+#        if self.rst>=5:
         self.refresh_GUI()
-        print 'timer'
+        self.rst = 0
+#        print 'timer'
 
 
     def refresh_GUI(self):

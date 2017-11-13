@@ -1,0 +1,7 @@
+LIBRARY lib
+EXPORTS
+test @1
+connect @2
+Falcon_Software_Reset @3
+LoadScript @4
+Falcon_Logic_Reset @5
