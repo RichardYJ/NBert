@@ -205,14 +205,19 @@ class DialogLoadScript(QDialog, Ui_DialogLoadScript):
         super(DialogLoadScript, self).__init__(parent)
         self.lib=lib
         self.setupUi(self)
-        QtCore.QObject.connect(self.pushButton,QtCore.SIGNAL("clicked()"),self.load_script)
+        QtCore.QObject.connect(self.pushButton,QtCore.SIGNAL("clicked()"),self.load_window)
         self.label_2.setText(QtGui.QApplication.translate("DialogLoadScript", "Falcon_CHRIS2.txt", None,
                                                       QtGui.QApplication.UnicodeUTF8))
+        QtCore.QObject.connect(self.pushButton_OK,QtCore.SIGNAL("clicked()"),self.load_script)
+    
+    def load_window(self):
+        self.filename = QFileDialog.getOpenFileName(self,"Open File")
 
 
     def load_script(self):
-        filename = QFileDialog.getOpenFileName(self,"Open File")
+        filename = self.filename
         words = filename[0].split("/")
         if filename != '':
             self.label_2.setText(QtGui.QApplication.translate("DialogLoadScript",unicode.encode(words[-1]) , None, QtGui.QApplication.UnicodeUTF8))#(text=words.pop(-1))  words[0]
             self.lib.LoadScript(filename[0])
+#        QtCore.QCoreApplication.instance().quit()

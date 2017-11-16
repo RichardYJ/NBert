@@ -233,7 +233,7 @@ class falcon_powercycletest:
             tmp = self.api.MdioRd(0x0000)
             if tmp != 0x204c:
                 data = []
-            else:
+            else:;
                 time.sleep(1)
 
                 for i in range(16):

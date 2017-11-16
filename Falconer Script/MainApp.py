@@ -27,7 +27,7 @@ if __name__ == "__main__":
     else:
         lib.Falcon_Software_Reset()
         time.sleep(0.5)
-        lib.LoadScript(script)
+#        lib.LoadScript(script)
         time.sleep(0.5)
         lib.Falcon_Logic_Reset()
 #    dll.test()
